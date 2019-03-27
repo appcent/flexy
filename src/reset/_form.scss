@@ -58,7 +58,7 @@ input {
   &[type='search'] {
     /* Make webkit render the search input like a normal text field */
     appearance: textfield;
-    box-sizing: content-box;
+    //box-sizing: content-box;
   }
 }
 
