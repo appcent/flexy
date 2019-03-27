@@ -8,7 +8,7 @@ $flexy-block-grid-use-devices: true !default;
 @mixin _block-grid-offset() {
   margin: 0;
   box-sizing: border-box;
-  padding: 0 ($flexy-block-grid-padding / 2) $flexy-block-grid-padding;
+  padding: 0 $flexy-block-grid-padding ($flexy-block-grid-padding * 2);
 }
 
 @mixin flexy-block-grid-flex() {
@@ -61,7 +61,7 @@ $flexy-block-grid-use-devices: true !default;
 @mixin flexy-block-grid() {
   list-style: none;
   padding: 0;
-  margin: 0 (-$flexy-block-grid-padding/2);
+  margin: 0 (-$flexy-block-grid-padding);
 
   & > &__item {
     display: block;
