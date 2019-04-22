@@ -60,13 +60,11 @@ $flexy-block-grid-use-devices: true !default;
 
 @mixin flexy-block-grid() {
   list-style: none;
-  width: 100%; //ie
   padding: 0;
   margin: 0 (-$flexy-block-grid-padding);
 
   & > &__item {
     display: block;
-    width: 100%; //ie
     height: auto;
     @include _block-grid-offset;
   }

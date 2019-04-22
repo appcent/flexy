@@ -33,7 +33,6 @@
     max-width: $flexy-grid-wrapper-max-width;
     min-width: $flexy-grid-wrapper-min-width;
     box-sizing: border-box;
-    width: 100%; //ie
     @include flexy-grid-space($flexy-grid-gutter, padding);
 
     &_left {
