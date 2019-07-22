@@ -1,17 +1,17 @@
 @mixin flexy-input-placeholder {
-  &::-webkit-input-placeholder {
+  #{if(&, "&", "*")}::-webkit-input-placeholder {
     @content;
   }
 
-  &:-moz-placeholder {
+  #{if(&, "&", "*")}:-moz-placeholder {
     @content;
   }
 
-  &::-moz-placeholder {
+  #{if(&, "&", "*")}::-moz-placeholder {
     @content;
   }
 
-  &:-ms-input-placeholder {
+  #{if(&, "&", "*")}:-ms-input-placeholder {
     @content;
   }
 }
