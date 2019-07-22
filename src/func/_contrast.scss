@@ -103,8 +103,7 @@
   }
 
   @if ($contrast < $constraint) {
-    @warn 'Contrast ratio of #{$best} on #{$base} is pretty bad,
-      just #{$contrast}';
+    @warn 'Contrast ratio of #{$best} on #{$base} is pretty bad, just #{$contrast}';
   }
 
   @return $best;
